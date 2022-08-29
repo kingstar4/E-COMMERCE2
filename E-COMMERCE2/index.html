@@ -7,11 +7,11 @@
     <title>Xchange</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section id="header">
-        <a href="#"><span>X</span>change</a>
-
+    
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
@@ -19,10 +19,14 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+               <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
-
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
     </section>
 
     <section id="hero">
@@ -343,7 +347,7 @@
             <span>The best classic dress is on sale at Xchange</span>
             <button class="white">Learn More</button>
         </div>
-        <div class="banner-box banner-box2">
+        <div class="banner-box banner-box2" data-aos="fade-left">
             <h4>Spring/Summer</h4>
             <h2>Upcoming season</h2>
             <span>The best classic dress is on sale at Xchange</span>
@@ -352,15 +356,15 @@
     </section>
 
     <section id="banner3">
-        <div class="banner-box">
+        <div class="banner-box" data-aos="zoom-in" data-aos-duration="1000" >
             <h2>SEASON SALE</h2>
            <h3>Winter Collection -50% OFF</h3>
         </div>
-        <div class="banner-box banner-box2">
+        <div class="banner-box banner-box2" data-aos="fade-up" data-aos-duration="1500">
             <h2>NEW FOOTWEAR COLLECTION</h2>
            <h3>Spring/Summer 2022</h3>
         </div>
-        <div class="banner-box banner-box3">
+        <div class="banner-box banner-box3" data-aos="flip-right" data-aos-duration="1700">
             <h2>T-SHIRTS</h2>
            <h3>New Trendy Prints</h3>
         </div>
@@ -423,12 +427,14 @@
             <p>Secured Payment Gateways</p>
             <img src="img/pay/pay.png" alt="">
         </div>
-        
+
         <div class="copyright">
             <p>© 2022. Xchange Company</p>
         </div>
+       
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    
 </body>
 </html>
